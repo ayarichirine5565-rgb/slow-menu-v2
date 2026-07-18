@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>SLOW — Menu</title>
+<meta name="description" content="Menu digital SLOW Café">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Nunito+Sans:wght@400;500;600;700&family=Caveat:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Loader -->
+<div id="loader">
+  <div class="loader-mark">
+    <svg class="hourglass" viewBox="0 0 100 120" aria-hidden="true">
+        <polyline points="8,8 92,8 50,60 8,8" fill="none" stroke="currentColor" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+        <polygon points="50,62 92,112 8,112" fill="currentColor"/>
+        <line x1="8" y1="6" x2="92" y2="114" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+      </svg>
+    <span>SLOW</span>
+  </div>
+</div>
+
+<!-- Top bar / brand strip -->
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">
+      <svg class="hourglass small" viewBox="0 0 100 120" aria-hidden="true">
+        <polyline points="8,8 92,8 50,60 8,8" fill="none" stroke="currentColor" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"/>
+        <polygon points="50,62 92,112 8,112" fill="currentColor"/>
+        <line x1="8" y1="6" x2="92" y2="114" stroke="currentColor" stroke-width="7" stroke-linecap="round"/>
+      </svg>
+      <span>SLOW</span>
+    </div>
+    <button id="navToggle" class="nav-toggle" aria-label="Ouvrir le menu des catégories" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Category quick nav -->
+<nav id="catNav" class="cat-nav">
+  <div class="cat-nav-scroll">
+    <a href="#nos-cafes" class="cat-link active">Cafés</a>
+    <a href="#nos-thes" class="cat-link">Thés</a>
+    <a href="#iced-tea" class="cat-link">Iced Tea</a>
+    <a href="#macchiato" class="cat-link">Macchiato</a>
+    <a href="#cold-coffee" class="cat-link">Cold Coffee</a>
+    <a href="#frappuccino" class="cat-link">Frappuccino</a>
+    <a href="#boisson-chaud" class="cat-link">Boisson Chaud</a>
+    <a href="#milkshake" class="cat-link">Milkshake</a>
+    <a href="#les-mojitos" class="cat-link">Mojitos</a>
+    <a href="#jus-frais" class="cat-link">Jus Frais</a>
+    <a href="#boissons-fraiches" class="cat-link">Boissons Fraîches</a>
+    <a href="#crepes-sucre" class="cat-link">Crêpes / Gauffres</a>
+    <a href="#patisseries" class="cat-link">Pâtisseries</a>
+    <a href="#chichas" class="cat-link">Chichas</a>
+    <a href="#omelettes" class="cat-link">Omelettes</a>
+    <a href="#paninis" class="cat-link">Paninis</a>
+    <a href="#croques" class="cat-link">Croques Monsieur</a>
+    <a href="#crepes-sales" class="cat-link">Crêpes Salées</a>
+    <a href="#sandwich" class="cat-link">Sandwich</a>
+    <a href="#libanais" class="cat-link">Libanais</a>
+  </div>
+</nav>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero" id="top">
+  <div class="hero-bg" aria-hidden="true">
+    <svg class="steam" viewBox="0 0 300 400" preserveAspectRatio="none">
+      <path class="steam-path s1" d="M60,400 C40,320 90,300 60,230 C30,160 80,140 55,60" />
+      <path class="steam-path s2" d="M150,400 C130,310 180,290 150,210 C120,130 170,110 145,20" />
+      <path class="steam-path s3" d="M240,400 C220,320 270,300 240,230 C210,160 260,140 235,60" />
+    </svg>
+    <span class="bean b1"></span>
+    <span class="bean b2"></span>
+    <span class="bean b3"></span>
+    <span class="bean b4"></span>
+    <span class="bean b5"></span>
+    <span class="bean b6"></span>
+  </div>
+
+  <div class="hero-inner">
+    <div class="hero-mark reveal">
+      <svg class="hourglass big" viewBox="0 0 100 120" aria-hidden="true">
+        <polyline points="8,8 92,8 50,60 8,8" fill="none" stroke="currentColor" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+        <polygon points="50,62 92,112 8,112" fill="currentColor"/>
+        <line x1="8" y1="6" x2="92" y2="114" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <h1 class="hero-title reveal">Prenez le <span class="script-word">temps.</span></h1>
+    <p class="hero-sub reveal">Café de spécialité, jus frais &amp; chichas — savourés lentement, à votre rythme.</p>
+    <div class="hero-cta reveal">
+      <a href="#nos-cafes" class="btn btn-primary">Voir le menu</a>
+      <a href="#about" class="btn btn-ghost">Découvrir Slow</a>
+    </div>
+  </div>
+
+  <a href="#marquee" class="scroll-cue" aria-label="Défiler vers le bas">
+    <span></span>
+  </a>
+</section>
+
+<!-- ===================== MARQUEE ===================== -->
+<div class="marquee" id="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Café de Spécialité</span><i class="sep"></i>
+    <span>Fait Maison</span><i class="sep"></i>
+    <span>Jus Frais Pressés</span><i class="sep"></i>
+    <span>Chichas Premium</span><i class="sep"></i>
+    <span>Ouvert 7j/7</span><i class="sep"></i>
+    <span>Wifi Gratuit</span><i class="sep"></i>
+    <span>Café de Spécialité</span><i class="sep"></i>
+    <span>Fait Maison</span><i class="sep"></i>
+    <span>Jus Frais Pressés</span><i class="sep"></i>
+    <span>Chichas Premium</span><i class="sep"></i>
+    <span>Ouvert 7j/7</span><i class="sep"></i>
+    <span>Wifi Gratuit</span><i class="sep"></i>
+  </div>
+</div>
+
+<!-- ===================== ABOUT / STATS ===================== -->
+<section class="stats-section" id="about">
+  <div class="stats-head reveal">
+    <h2>Le temps d'une pause fait toute la différence.</h2>
+    <p>Chez SLOW, chaque boisson est préparée avec soin, sans jamais se presser.</p>
+  </div>
+  <div class="stats-grid">
+    <div class="stat reveal">
+      <span class="stat-number"><span class="stat-count" data-count="50">0</span>+</span>
+      <span class="stat-label">Boissons</span>
+    </div>
+    <div class="stat reveal">
+      <span class="stat-number"><span class="stat-count" data-count="20">0</span>+</span>
+      <span class="stat-label">Snacks &amp; Crêpes</span>
+    </div>
+    <div class="stat reveal">
+      <span class="stat-number"><span class="stat-count" data-count="7">0</span></span>
+      <span class="stat-label">Jours / semaine</span>
+    </div>
+    <div class="stat reveal">
+      <span class="stat-number"><span class="stat-count" data-count="100">0</span>%</span>
+      <span class="stat-label">Fait maison</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FEATURES ===================== -->
+<section class="features-section">
+  <h2 class="reveal">Explorez notre univers</h2>
+  <div class="features-grid">
+    <a href="#nos-cafes" class="feature-card reveal">
+      <span class="feature-tag">Chaud</span>
+      <h3>Nos Cafés</h3>
+      <p>Express, cappucino, café turc et nos macchiatos gourmands.</p>
+      <span class="feature-link">Découvrir <i>→</i></span>
+    </a>
+    <a href="#jus-frais" class="feature-card reveal">
+      <span class="feature-tag">Frais</span>
+      <h3>Jus &amp; Mojitos</h3>
+      <p>Fruits pressés, iced teas et mojitos virgin ou signature.</p>
+      <span class="feature-link">Découvrir <i>→</i></span>
+    </a>
+    <a href="#chichas" class="feature-card reveal">
+      <span class="feature-tag">Chicha</span>
+      <h3>Chichas &amp; Douceurs</h3>
+      <p>Chichas premium, crêpes gourmandes et pâtisseries maison.</p>
+      <span class="feature-link">Découvrir <i>→</i></span>
+    </a>
+  </div>
+</section>
+
+<!-- ===================== CTA BANNER ===================== -->
+<section class="cta-banner reveal">
+  <svg class="hourglass big" viewBox="0 0 100 120" aria-hidden="true">
+    <polyline points="8,8 92,8 50,60 8,8" fill="none" stroke="currentColor" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+    <polygon points="50,62 92,112 8,112" fill="currentColor"/>
+    <line x1="8" y1="6" x2="92" y2="114" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+  </svg>
+  <h2>Envie d'une pause ?</h2>
+  <p>Parcourez tout le menu, à votre rythme.</p>
+  <a href="#nos-cafes" class="btn btn-invert">Voir le menu complet</a>
+</section>
+
+<main id="menu">
+
+  <!-- ===================== MENU DRINKS ===================== -->
+  <section class="menu-page" data-section-title="MENU DRINKS">
+    <aside class="side-rail reveal">
+      <h1 class="rail-title">MENU DRINKS</h1>
+      <div class="rail-logo">
+        <svg class="hourglass" viewBox="0 0 100 120" aria-hidden="true">
+        <polyline points="8,8 92,8 50,60 8,8" fill="none" stroke="currentColor" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+        <polygon points="50,62 92,112 8,112" fill="currentColor"/>
+        <line x1="8" y1="6" x2="92" y2="114" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+      </svg>
+        <span>SLOW</span>
+      </div>
+    </aside>
+
+    <div class="content">
+
+      <div class="category reveal" id="nos-cafes">
+        <h2>Nos Cafés</h2>
+        <ul class="items">
+          <li><span class="name">Express</span><span class="dots"></span><span class="price">3,5</span></li>
+          <li><span class="name">Americain</span><span class="dots"></span><span class="price">3,8</span></li>
+          <li><span class="name">Capucin</span><span class="dots"></span><span class="price">4</span></li>
+          <li><span class="name">Macchiata</span><span class="dots"></span><span class="price">4</span></li>
+          <li><span class="name">Café Créme</span><span class="dots"></span><span class="price">4,5</span></li>
+          <li><span class="name">Nescafé</span><span class="dots"></span><span class="price">6</span></li>
+          <li><span class="name">Cappucino</span><span class="dots"></span><span class="price">6</span></li>
+          <li><span class="name">Café Turc</span><span class="dots"></span><span class="price">6</span></li>
+        </ul>
+      </div>
+
+      <div class="category reveal" id="supplements-1">
+        <h2>Supplements</h2>
+        <ul class="items">
+          <li><span class="name">Nestlé</span><span class="dots"></span><span class="price">3</span></li>
+          <li><span class="name">Arome</span><span class="dots"></span><span class="price">3</span></li>
+          <li><span class="name">Amande</span><span class="dots"></span><span class="price">3,5</span></li>
+        </ul>
+      </div>
+
+      <div class="category reveal" id="nos-thes">
+        <h2>Nos Thés</h2>
+        <ul class="items">
+          <li><span class="name">Tunisien</span><span class="dots"></span><span class="price">3</span></li>
+          <li><span class="name">Infusion <small>(Verveine, Vert, Camomille, Noir, Fruits Rouges)</small></span><span class="dots"></span><span class="price">4</span></li>
+        </ul>
+      </div>
+
+      <div class="category reveal" id="iced-tea">
+        <h2>Iced Tea</h2>
+        <ul class="items">
+          <li><span class="name">Peche / Framboise</span><span class="dots"></span><span class="price">10</span></li>
+          <li><span class="name">Framboise / Myrtille</span><span class="dots"></span><span class="price">10</span></li>
+          <li><span class="name">Slow Exotique</span><span class="dots"></span><span class="price">12</span></li>
+        </ul>
+      </div>
+
+      <div class="category reveal" id="macchiato">
+        <h2>Macchiato</h2>
+        <ul class="items">
+          <li><span class="name">Caramel</span><span class="dots"></span><span class="price">8</span></li>
+          <li><span class="name">Noisette</span><span class="dots"></span><span class="price">8</span></li>
+          <li><span class="name">Nutella</span><span class="dots"></span><span class="price">9</span></li>
+          <li><span class="name">Oreo, Speculoos</span><span class="dots"></span><span class="price">9</span></li>
+        </ul>
+      </div>
+
+      <div class="category reveal" id="cold-coffee">
+        <h2>Cold Coffee</h2>
+        <ul class="items">
+          <li><span class="name">Ice Vanilla Latte</span><span class="dots"></span><span class="price">10</span></li>
+          <li><span class="name">Ice Pistachio Latte</span><span class="dots"></span><span class="price">12</span></li>
+          <li><span class="name">Ice Nutella Latte</span><span class="dots"></span><span class="price">11</span></li>
+          <li><span class="name">Ice Toffee Nut</span><span class="dots"></span><span class="price">11</span></li>
+          <li><span class="name">Ice Oreo Latte</span><span class="dots"></span><span class="price">11</span></li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== MORE DRINKS ===================== -->
+  <section class="menu-page" data-section-title="MORE DRINKS">
+    <aside class="side-rail reveal">
+      <h1 class="rail-title">…MORE DRINKS</h1>
+      <div class="rail-logo">
+        <svg class="hourglass" viewBox="0 0 100 120" aria-hidden="true">
+        <polyline points="8,8 92,8 50,60 8,8" fill="none" stroke="currentColor" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+        <polygon points="50,62 92,112 8,112" fill="currentColor"/>
+        <line x1="8" y1="6" x2="92" y2="114" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+      </svg>
+        <span>SLOW</span>
+      </div>
+    </aside>
+
+    <div class="content">
+
+      <div class="category reveal" id="frappuccino">
+        <h2>Frappuccino</h2>
+        <ul class="items">
+          <li><span class="name">Caramel</span><span class="dots"></span><span class="price">10</span></li>
+          <li><span class="name">Noisette</span><span class="dots"></span><span class="price">10</span></li>
+          <li><span class="name">Nutella</span><span class="dots"></span><span class="price">10</span></li>
+          <li><span class="name">Oreo, Speculoos</span><span class="dots"></span><span class="price">10</span></li>
+        </ul>
+      </div>
+
+      <div class="category reveal" id="boisson-chaud">
+        <h2>Boisson Chaud</h2>
+        <ul class="items">
+          <li><span class="name">Chocolat Chaud</span><span class="dots"></span><span class="price">6</span></li>
+          <li><span class="name">Chocolat Caramel</span><span class="dots"></span><span class="price">9</span></li>
+          <li><span class="name">Chocolat au Lait</span><span class="dots"></span><span class="price">3,5</span></li>
+        </ul>
+      </div>
+
+      <div class="category reveal" id="milkshake">
+        <h2>Milkshake</h2>
+        <ul class="items">
+          <li><span class="name">Fraise, Chocolat</span><span class="dots"></span><span class="price">8</span></li>
+          <li><span class="name">Vanille</span><span class="dots"></span><span class="price">8</span></li>
+          <li><span class="name">Nutella</span><span class="dots"></span><span class="price">10</span></li>
+          <li><span class="name">Pistachio</span><span class="dots"></span><span class="price">10</span></li>
+        </ul>
+      </div>
+
+      <div class="category reveal" id="les-mojitos">
+        <h2>Les Mojitos</h2>
+        <ul class="items">
+          <li><span class="name">Virgin</span><span class="dots"></span><span class="price">9</span></li>
+          <li><span class="name">Red</span><span class="dots"></span><span class="price">10</span></li>
+          <li><span class="name">Blue</span><span class="dots"></span><span class="price">10</span></li>
+          <li><span class="name">Fruits de La Passion</span><span class="dots"></span><span class="price">9</span></li>
+          <li><span class="name">Mangue Orientale</span><span class="dots"></span><span class="price">10</span></li>
+          <li><span class="name">Energetic</span><span class="dots"></span><span class="price">17</span></li>
+        </ul>
+      </div>
+
+      <div class="category reveal" id="jus-frais">
+        <h2>Jus Frais</h2>
+        <ul class="items">
+          <li><span class="name">Orange</span><span class="dots"></span><span class="price">7</span></li>
+          <li><span class="name">Citronnade</span><span class="dots"></span><span class="price">7</span></li>
+          <li><span class="name">Fraise</span><span class="dots"></span><span class="price">8</span></li>
+          <li><span class="name">Banane</span><span class="dots"></span><span class="price">11</span></li>
+          <li><span class="name">Fraise Banane</span><span class="dots"></span><span class="price">12</span></li>
+          <li><span class="name">Cocktail Saison</span><span class="dots"></span><span class="price">15</span></li>
+          <li><span class="name">Pasteque</span><span class="dots"></span><span class="price">10</span></li>
+        </ul>
+      </div>
+
+      <div class="category reveal" id="boissons-fraiches">
+        <h2>Boissons Fraiches</h2>
+        <ul class="items">
+          <li><span class="name">0,5L Eau</span><span class="dots"></span><span class="price">2</span></li>
+          <li><span class="name">1L Eau</span><span class="dots"></span><span class="price">2,5</span></li>
+          <li><span class="name">Soda</span><span class="dots"></span><span class="price">4</span></li>
+          <li><span class="name">RedBull</span><span class="dots"></span><span class="price">8</span></li>
+          <li><span class="name">Garci 0,5L</span><span class="dots"></span><span class="price">2</span></li>
+          <li><span class="name">Garci 1L</span><span class="dots"></span><span class="price">2,5</span></li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== MENU SUCRÉ / CHICHAS ===================== -->
+  <section class="menu-page" data-section-title="MENU SUCRÉ">
+    <aside class="side-rail reveal">
+      <h1 class="rail-title">MENU SUCRÉ</h1>
+      <div class="rail-logo">
+        <svg class="hourglass" viewBox="0 0 100 120" aria-hidden="true">
+        <polyline points="8,8 92,8 50,60 8,8" fill="none" stroke="currentColor" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+        <polygon points="50,62 92,112 8,112" fill="currentColor"/>
+        <line x1="8" y1="6" x2="92" y2="114" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+      </svg>
+        <span>SLOW</span>
+      </div>
+    </aside>
+
+    <div class="content">
+
+      <div class="category reveal" id="crepes-sucre">
+        <h2>Nos Crepes / Gauffres</h2>
+        <ul class="items">
+          <li><span class="name">Nutella</span><span class="dots"></span><span class="price">11</span></li>
+          <li><span class="name">Nutella Banane</span><span class="dots"></span><span class="price">15</span></li>
+          <li><span class="name">Nutella Caramel</span><span class="dots"></span><span class="price">13</span></li>
+        </ul>
+      </div>
+
+      <div class="category reveal" id="patisseries">
+        <h2>Les Patisseries</h2>
+        <ul class="items">
+          <li><span class="name">Croissant aux Amandes</span><span class="dots"></span><span class="price">3</span></li>
+          <li><span class="name">Croissant</span><span class="dots"></span><span class="price">2.5</span></li>
+          <li><span class="name">Cake</span><span class="dots"></span><span class="price">3</span></li>
+          <li><span class="name">Cake au Chocolat</span><span class="dots"></span><span class="price">4,5</span></li>
+        </ul>
+      </div>
+
+      <div class="category reveal chichas-block" id="chichas">
+        <h2 class="accent-title">Menu Chichas</h2>
+        <ul class="items">
+          <li><span class="name">Fekher</span><span class="dots"></span><span class="price">11</span></li>
+          <li><span class="name">Adalya <small>(Love, Hawai, Cheikh Money)</small></span><span class="dots"></span><span class="price">12</span></li>
+          <li><span class="name">Glaçon</span><span class="dots"></span><span class="price">15</span></li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== MENU SALÉ ===================== -->
+  <section class="menu-page" data-section-title="MENU SALÉ">
+    <aside class="side-rail reveal">
+      <h1 class="rail-title">MENU SALÉ</h1>
+      <div class="rail-logo">
+        <svg class="hourglass" viewBox="0 0 100 120" aria-hidden="true">
+        <polyline points="8,8 92,8 50,60 8,8" fill="none" stroke="currentColor" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+        <polygon points="50,62 92,112 8,112" fill="currentColor"/>
+        <line x1="8" y1="6" x2="92" y2="114" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+      </svg>
+        <span>SLOW</span>
+      </div>
+    </aside>
+
+    <div class="content">
+
+      <div class="category reveal" id="omelettes">
+        <h2>Les Omelettes</h2>
+        <ul class="items">
+          <li><span class="name">Nature</span><span class="dots"></span><span class="price">8</span></li>
+          <li><span class="name">Jambon</span><span class="dots"></span><span class="price">10</span></li>
+          <li><span class="name">Thon</span><span class="dots"></span><span class="price">10</span></li>
+        </ul>
+      </div>
+
+      <div class="category reveal" id="paninis">
+        <h2>Nos Paninis</h2>
+        <ul class="items">
+          <li><span class="name">Jambon</span><span class="dots"></span><span class="price">10</span></li>
+          <li><span class="name">Thon</span><span class="dots"></span><span class="price">10</span></li>
+        </ul>
+      </div>
+
+      <div class="category reveal" id="croques">
+        <h2>Nos Croques Monsieur</h2>
+        <ul class="items">
+          <li><span class="name">Jambon</span><span class="dots"></span><span class="price">10</span></li>
+          <li><span class="name">Thon</span><span class="dots"></span><span class="price">10</span></li>
+        </ul>
+      </div>
+
+      <div class="category reveal" id="crepes-sales">
+        <h2>Crepes Salés</h2>
+        <ul class="items">
+          <li><span class="name">Tunisienne <small>(Thon, Mozzarella, Oeuf)</small></span><span class="dots"></span><span class="price">12</span></li>
+          <li><span class="name">Jambon <small>(Jambon, Mozzarella, Mayonnaise)</small></span><span class="dots"></span><span class="price">12</span></li>
+          <li><span class="name">Végétarienne <small>(Mozzarella, Ognion, Piment, Laitue, Tomate)</small></span><span class="dots"></span><span class="price">10</span></li>
+          <li><span class="name">Escalope <small>(Mozzarella, Sauce César, Escalpe)</small></span><span class="dots"></span><span class="price">16</span></li>
+        </ul>
+      </div>
+
+      <div class="salé-grid">
+        <div class="category reveal" id="sandwich">
+          <h2>Sandwich</h2>
+          <ul class="items">
+            <li><span class="name">Escalope</span><span class="dots"></span><span class="price">10</span></li>
+            <li><span class="name">Jambon</span><span class="dots"></span><span class="price">9</span></li>
+            <li><span class="name">Salami Bœuf</span><span class="dots"></span><span class="price">9</span></li>
+            <li><span class="name">Thon</span><span class="dots"></span><span class="price">10</span></li>
+            <li><span class="name">Emincé de Bœuf</span><span class="dots"></span><span class="price">13</span></li>
+          </ul>
+        </div>
+
+        <div class="category reveal" id="supplements-2">
+          <h2>Supplements</h2>
+          <ul class="items">
+            <li><span class="name">Fromage Gouda</span><span class="dots"></span><span class="price">3</span></li>
+            <li><span class="name">Fromage Gruyére</span><span class="dots"></span><span class="price">3</span></li>
+            <li><span class="name">Nuggets et Frite</span><span class="dots"></span><span class="price">8</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="category reveal" id="libanais">
+        <h2>Libanais</h2>
+        <ul class="items">
+          <li><span class="name">Escalope</span><span class="dots"></span><span class="price">15</span></li>
+          <li><span class="name">Jambon</span><span class="dots"></span><span class="price">13</span></li>
+          <li><span class="name">Thon</span><span class="dots"></span><span class="price">13</span></li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer reveal">
+  <svg class="hourglass small" viewBox="0 0 100 120" aria-hidden="true">
+        <polyline points="8,8 92,8 50,60 8,8" fill="none" stroke="currentColor" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"/>
+        <polygon points="50,62 92,112 8,112" fill="currentColor"/>
+        <line x1="8" y1="6" x2="92" y2="114" stroke="currentColor" stroke-width="7" stroke-linecap="round"/>
+      </svg>
+  <span>SLOW</span>
+  <button id="backToTop" aria-label="Retour en haut">↑ Haut de page</button>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
