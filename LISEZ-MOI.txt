@@ -1,0 +1,43 @@
+COMMENT AJOUTER VOS PHOTOS
+===========================
+
+Mettez vos photos dans ce dossier "images" avec EXACTEMENT ces noms
+de fichier (respectez les minuscules et les tirets). Format .jpg
+conseillé, mais .png fonctionne aussi si vous changez l'extension
+dans index.html.
+
+Conseil : photos au format paysage (16:10), au moins 800px de large,
+bien éclairées. Si un fichier est manquant, la photo disparaît
+simplement du menu (rien ne casse).
+
+MENU DRINKS
+  nos-cafes.jpg          -> Nos Cafés
+  nos-thes.jpg           -> Nos Thés
+  iced-tea.jpg           -> Iced Tea
+  macchiato.jpg          -> Macchiato
+  cold-coffee.jpg        -> Cold Coffee
+
+MORE DRINKS
+  frappuccino.jpg        -> Frappuccino
+  boisson-chaud.jpg      -> Boisson Chaud
+  milkshake.jpg          -> Milkshake
+  les-mojitos.jpg        -> Les Mojitos
+  jus-frais.jpg          -> Jus Frais
+  boissons-fraiches.jpg  -> Boissons Fraîches
+
+MENU SUCRÉ
+  crepes-sucre.jpg       -> Nos Crêpes / Gauffres
+  patisseries.jpg        -> Les Patisseries
+  chichas.jpg            -> Menu Chichas
+
+MENU SALÉ
+  omelettes.jpg          -> Les Omelettes
+  paninis.jpg            -> Nos Paninis
+  croques.jpg            -> Nos Croques Monsieur
+  crepes-sales.jpg       -> Crêpes Salées
+  sandwich.jpg           -> Sandwich
+  libanais.jpg           -> Libanais
+
+Une fois vos 20 photos ajoutées ici, uploadez tout le dossier
+"images" dans votre dépôt GitHub (à côté de index.html, style.css
+et script.js), au même niveau — pas dans un sous-dossier.
